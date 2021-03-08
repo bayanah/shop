@@ -15,7 +15,7 @@
                     <div class="card-body">
                         <h5 class="card-title"><?= $item->title ?></h5>
                         <p class="card-text"><?= $item->price ?></p>
-                        <a href="#" class="btn btn-primary">Add to bag</a>
+                        <a href="<?= site_url('add/' . $item->id) ?>" class="btn btn-primary">Add to bag</a>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         ?>        
     </div>    
     <div class="row">
-        <div class="col-12">
+        <div class="col-12 m-auto">
             <?= $pagination ?>
         </div>
     </div>

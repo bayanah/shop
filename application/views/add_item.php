@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <h1>Add Item</h1>
             <?= isset($error) ? $error : '' ?>
             <?= validation_errors() ?>
-            <?= form_open_multipart() ?>
+            <?= form_open_multipart(current_url) ?>
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" name="title" value="<?= set_value('title') ?>">                            
